@@ -250,15 +250,20 @@ a { color: var(--teal); text-decoration: none; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
 }
-.platform svg {
+/* Icons are self-hosted SVGs (Simple Icons / Lucide) tinted via CSS mask,
+   so they inherit the theme color and work in light & dark. See images/icons/. */
+.p-ico {
+  display: block;
   width: 34px; height: 34px;
-  fill: var(--teal);
   margin-bottom: .4rem;
+  background-color: var(--teal);
+  -webkit-mask: var(--i) center / contain no-repeat;
+          mask: var(--i) center / contain no-repeat;
 }
 .platform__name { font-weight: 700; }
 .platform__note { font-size: .8rem; color: var(--muted); }
 .platform--soon { opacity: .65; }
-.platform--soon svg { fill: var(--muted); }
+.platform--soon .p-ico { background-color: var(--muted); }
 
 /* ---------- Responsive showcase ---------- */
 .responsive__grid {
@@ -300,13 +305,12 @@ a { color: var(--teal); text-decoration: none; }
   background: var(--mint);
   margin-bottom: 1rem;
 }
-.feature__icon svg {
+.feature__icon .f-ico {
+  display: block;
   width: 24px; height: 24px;
-  fill: none;
-  stroke: var(--teal);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  background-color: var(--teal);
+  -webkit-mask: var(--i) center / contain no-repeat;
+          mask: var(--i) center / contain no-repeat;
 }
 .feature h3 { margin: 0 0 .4rem; font-size: 1.15rem; }
 .feature p { margin: 0; color: var(--muted); }
