@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PerkMax — Never waste a credit card perk again</title>
+  <meta name="description" content="PerkMax tracks every recurring credit, certificate, and free night across your premium credit cards. Local-first, no account, no tracking. Runs on Android, Web, Windows, macOS, and Linux." />
+  <meta name="theme-color" content="#246B68" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PerkMax — Never waste a credit card perk again" />
+  <meta property="og:description" content="Track every recurring credit, certificate, and free night across your premium cards. Local-first. No account. No tracking." />
+  <meta property="og:image" content="images/icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="apple-touch-icon" href="images/icon-512.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="PerkMax home">
+        <img class="brand__logo" src="images/logo.png" width="32" height="32" alt="" />
+        <span class="brand__name">PerkMax</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#platforms">Platforms</a>
+        <a href="#responsive">Any screen</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--ghost" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Download</a>
+        <a class="btn btn--primary" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
+      </div>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Premium card perks, fully tracked</p>
+        <h1 class="hero__title">Never waste a credit again.</h1>
+        <p class="hero__sub">
+          PerkMax keeps tabs on every recurring credit, companion certificate, and
+          free night across your premium cards — so you actually use the perks
+          you're already paying annual fees for.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
+          <a class="btn btn--ghost btn--lg" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Download for your device</a>
+        </div>
+        <ul class="hero__chips" aria-label="Supported platforms">
+          <li>Android</li>
+          <li>Web · PWA</li>
+          <li>Windows</li>
+          <li>macOS</li>
+          <li>Linux</li>
+        </ul>
+      </div>
+
+      <div class="hero__art">
+        <!-- REPLACE images/shot-hero.svg with a real dashboard screenshot (landscape, ~1200×760) -->
+        <div class="browser-frame">
+          <div class="browser-frame__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <img src="images/shot-hero.svg" alt="PerkMax dashboard showing credit progress across cards" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATFORMS ============ -->
+  <section class="section" id="platforms">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">One wallet, every device</p>
+      <h2 class="section__title">Runs everywhere you do.</h2>
+      <p class="section__lead">
+        Built with Flutter, PerkMax ships as a true native app on desktop,
+        installs as a Progressive Web App from your browser, and sideloads on
+        Android — all sharing the same wallet through your own cloud backup.
+      </p>
+
+      <ul class="platforms">
+        <li class="platform">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1Zm12 0a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1ZM8 9h8v7a1 1 0 0 1-1 1h-1v2a1 1 0 1 1-2 0v-2h-0a1 1 0 0 1 0 0v2a1 1 0 1 1-2 0v-2H9a1 1 0 0 1-1-1V9Zm.5-1a4.5 4.5 0 0 1 9 0h-9Zm2-3.4-.9-1.6a.4.4 0 0 1 .7-.4l.9 1.6a5.4 5.4 0 0 1 3.6 0l.9-1.6a.4.4 0 1 1 .7.4l-.9 1.6"/></svg>
+          <span class="platform__name">Android</span>
+          <span class="platform__note">Sideloaded APK</span>
+        </li>
+        <li class="platform">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.3 0 2.7 2 3.2 5H8.8C9.3 8 10.7 6 12 6Zm-1.4.3C9.9 5.3 9.4 6.5 9 8H6.3a8 8 0 0 1 4.3-3.7ZM5.3 10h3.3c-.1 1.3-.1 2.7 0 4H5.3a8 8 0 0 1 0-4Zm1 6H9c.4 1.5.9 2.7 1.6 3.7A8 8 0 0 1 6.3 16Zm5.7 4c-1.3 0-2.7-2-3.2-5h6.4c-.5 3-1.9 5-3.2 5Zm1.4-.3c.7-1 1.2-2.2 1.6-3.7h2.7a8 8 0 0 1-4.3 3.7Zm5-5.7h-3.3c.1-1.3.1-2.7 0-4h3.3a8 8 0 0 1 0 4Zm-.3-6H15c-.4-1.5-.9-2.7-1.6-3.7A8 8 0 0 1 17.7 8Z"/></svg>
+          <span class="platform__name">Web</span>
+          <span class="platform__note">Installable PWA</span>
+        </li>
+        <li class="platform">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.7 10.5 4.7v6.8H3V5.7Zm0 12.6 7.5 1V12.5H3v5.8Zm8.5 1.2L21 20.5V12.5h-9.5v7Zm0-15.2v7H21V3.5l-9.5 1.3Z"/></svg>
+          <span class="platform__name">Windows</span>
+          <span class="platform__note">Native build</span>
+        </li>
+        <li class="platform">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3c.1 1.1-.3 2.1-1 2.9-.7.8-1.8 1.4-2.8 1.3-.1-1 .4-2.1 1-2.8.8-.8 2-1.4 2.8-1.4ZM19.3 17c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.3 3.2-4 3.2-1.5 0-1.9-1-3.9-1-2 0-2.4 1-3.9 1-1.7 0-3-1.6-4-3C-.9 16.5-1.2 11 1.6 9c1-.7 2-1.2 3.1-1.2 1.6 0 2.5 1 3.8 1 1.2 0 2-1 3.8-1 1 0 2.6.3 3.7 1.6-3.2 1.8-2.7 6.3.3 7.6Z"/></svg>
+          <span class="platform__name">macOS</span>
+          <span class="platform__note">Native build</span>
+        </li>
+        <li class="platform">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.2 0-3.5 1.8-3.5 4.2 0 1.6.3 2.4.3 3.6 0 1-1 2-2 3.6-1 1.6-2 3.3-2 5 0 1.6 1 2.4 2 2.4.6 0 1-.3 1.3-.7.3.9 1.2 1.6 3.9 1.6s3.6-.7 3.9-1.6c.3.4.7.7 1.3.7 1 0 2-.8 2-2.4 0-1.7-1-3.4-2-5-1-1.6-2-2.6-2-3.6 0-1.2.3-2 .3-3.6C15.5 3.8 14.2 2 12 2Zm-1.4 4c.5 0 .9.6.9 1.3s-.4 1.2-.9 1.2-.9-.5-.9-1.2.4-1.3.9-1.3Zm2.8 0c.5 0 .9.6.9 1.3s-.4 1.2-.9 1.2-.9-.5-.9-1.2.4-1.3.9-1.3Z"/></svg>
+          <span class="platform__name">Linux</span>
+          <span class="platform__note">Native build</span>
+        </li>
+        <li class="platform platform--soon">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3c.1 1.1-.3 2.1-1 2.9-.7.8-1.8 1.4-2.8 1.3-.1-1 .4-2.1 1-2.8.8-.8 2-1.4 2.8-1.4ZM19.3 17c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.3 3.2-4 3.2-1.5 0-1.9-1-3.9-1-2 0-2.4 1-3.9 1-1.7 0-3-1.6-4-3C-.9 16.5-1.2 11 1.6 9c1-.7 2-1.2 3.1-1.2 1.6 0 2.5 1 3.8 1 1.2 0 2-1 3.8-1 1 0 2.6.3 3.7 1.6-3.2 1.8-2.7 6.3.3 7.6Z"/></svg>
+          <span class="platform__name">iOS</span>
+          <span class="platform__note">Planned</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ RESPONSIVE ============ -->
+  <section class="section section--alt" id="responsive">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Portrait or landscape</p>
+      <h2 class="section__title">Looks right held tall or wide.</h2>
+      <p class="section__lead">
+        The layout reflows to whatever you're on. Glanceable, scrollable progress
+        on a phone in portrait — a dense, multi-column overview when you go
+        landscape on a tablet or desktop. Same data, fit to the screen.
+      </p>
+
+      <div class="responsive__grid">
+        <figure class="device device--phone">
+          <!-- REPLACE images/shot-portrait.svg with a real phone screenshot (portrait, ~390×844) -->
+          <div class="phone-frame">
+            <img src="images/shot-portrait.svg" alt="PerkMax in portrait on a phone" />
+          </div>
+          <figcaption>Portrait · phone</figcaption>
+        </figure>
+
+        <figure class="device device--wide">
+          <!-- REPLACE images/shot-landscape.svg with a real wide screenshot (landscape, ~1280×800) -->
+          <div class="browser-frame">
+            <div class="browser-frame__bar"><span></span><span></span><span></span></div>
+            <img src="images/shot-landscape.svg" alt="PerkMax in landscape on a desktop" />
+          </div>
+          <figcaption>Landscape · desktop &amp; tablet</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">What it tracks</p>
+      <h2 class="section__title">Built for the way perks actually work.</h2>
+
+      <ul class="features">
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M7 15h4"/></svg>
+          </span>
+          <h3>Recurring credits</h3>
+          <p>Monthly, quarterly, semi-annual, and annual credits with progress bars and one-tap "used" marking.</p>
+        </li>
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+          </span>
+          <h3>Spend-gated credits</h3>
+          <p>See your progress toward spend thresholds that unlock benefits — like companion certificates at $30k or $60k.</p>
+        </li>
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 0 0 4 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2 2 2 0 0 0 0-4Z"/><path d="M14 6v12"/></svg>
+          </span>
+          <h3>Certificates &amp; free nights</h3>
+          <p>All-or-nothing tracking for Hilton and Marriott free nights and Delta companion certs — with valuations you can tune.</p>
+        </li>
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 8a6 6 0 0 1 10-4l2 2"/><path d="M20 4v4h-4"/><path d="M20 16a6 6 0 0 1-10 4l-2-2"/><path d="M4 20v-4h4"/></svg>
+          </span>
+          <h3>Subscriptions</h3>
+          <p>Map Netflix, Instacart, and more to the card that reimburses them, and keep an eye on billing dates.</p>
+        </li>
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <h3>Usage history</h3>
+          <p>Review what you used and what you missed by card and period — and exactly how much value slipped away.</p>
+        </li>
+        <li class="feature">
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-8 5.5 5.5 0 0 1 10.6-1.4A4 4 0 0 1 17 18H7Z"/><path d="M12 11v6"/><path d="M9.5 13.5 12 11l2.5 2.5"/></svg>
+          </span>
+          <h3>Your-cloud backup</h3>
+          <p>Optional, conflict-safe sync to <em>your own</em> Google Drive or OneDrive. You hold the data — we never see it.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY ============ -->
+  <section class="section privacy" id="privacy">
+    <div class="container">
+      <p class="eyebrow eyebrow--center eyebrow--light">Private by design</p>
+      <h2 class="section__title section__title--light">Your wallet is yours.</h2>
+      <p class="section__lead section__lead--light">
+        PerkMax stores everything on your device and answers to no server we run.
+        There is no PerkMax account, because there is no PerkMax backend to hold
+        your data.
+      </p>
+
+      <ul class="privacy__grid">
+        <li class="privacy__card">
+          <h3>On-device first</h3>
+          <p>All your cards, credits, and history live in a local database on your phone or computer — not in the cloud by default.</p>
+        </li>
+        <li class="privacy__card">
+          <h3>No analytics, ever</h3>
+          <p>No telemetry, no trackers, no ad SDKs, and no third-party scripts. This very page loads zero external resources.</p>
+        </li>
+        <li class="privacy__card">
+          <h3>No account required</h3>
+          <p>Open the app and start tracking. No sign-up, no email, no password — nothing to leak.</p>
+        </li>
+        <li class="privacy__card">
+          <h3>You own the backup</h3>
+          <p>The only network access is the cloud backup you explicitly turn on, writing to your private Drive or OneDrive app folder.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOAD ============ -->
+  <section class="section download" id="download">
+    <div class="container download__inner">
+      <h2 class="section__title">Get PerkMax.</h2>
+      <p class="section__lead">Pick the build for your device, or just open it in the browser — no install required.</p>
+      <div class="download__actions">
+        <a class="btn btn--primary btn--lg" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
+        <a class="btn btn--ghost btn--lg" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Android &amp; desktop downloads</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.png" width="28" height="28" alt="" />
+        <span>PerkMax</span>
+      </div>
+      <p class="footer__disclaimer">
+        PerkMax is an independent project and is not affiliated with, endorsed by,
+        or sponsored by American Express, Chase, Capital One, Citi, Bank of America,
+        or any card issuer. All trademarks belong to their respective owners.
+      </p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> PerkMax</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
