@@ -360,7 +360,7 @@ a { color: var(--teal); text-decoration: none; }
   border-bottom: 1px solid var(--border);
 }
 .feature-row:last-child { border-bottom: none; }
-.feature-row:nth-child(even) { grid-template-areas: "art text"; }
+.feature-row:nth-child(even) { grid-template-columns: 240px 1fr; grid-template-areas: "art text"; }
 .feature-row__text { grid-area: text; }
 .feature-row__art { grid-area: art; max-width: 240px; width: 100%; margin-inline: auto; }
 .feature__icon {
