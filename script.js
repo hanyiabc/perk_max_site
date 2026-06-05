@@ -3,8 +3,8 @@
   'use strict';
 
   var URLS = {
-    android: 'https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/app-release.apk',
-    windows: 'https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/perk_max_windows.zip',
+    android: 'https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/PerkMax-0.1.0-universal.apk',
+    windows: 'https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/PerkMax-0.1.0-windows-x64.zip',
     pwa:     'https://hanyiabc.github.io/perk_max_releases/',
   };
 
