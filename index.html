@@ -23,13 +23,14 @@
   <header class="nav" id="top">
     <div class="container nav__inner">
       <a class="brand" href="#top" aria-label="PerkMax home">
-        <img class="brand__logo" src="images/logo.png" width="53" height="53" alt="" />
+        <img class="brand__logo" src="images/logo.png" width="66" height="66" alt="" />
         <span class="brand__name">PerkMax</span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#platforms">Platforms</a>
         <a href="#features">Features</a>
+        <a href="#cards">Cards</a>
         <a href="#responsive">Any screen</a>
         <a href="#privacy">Privacy</a>
       </nav>
@@ -97,6 +98,13 @@
         </li>
         <li>
           <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
+            <span class="platform__name">iOS</span>
+            <span class="platform__note">Installable PWA app</span>
+          </a>
+        </li>
+        <li>
+          <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
             <span class="p-ico" style="--i:url('images/icons/globe.svg')" aria-hidden="true"></span>
             <span class="platform__name">Web</span>
             <span class="platform__note">Open Web App</span>
@@ -120,13 +128,6 @@
           <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
             <span class="p-ico" style="--i:url('images/icons/linux.svg')" aria-hidden="true"></span>
             <span class="platform__name">Linux</span>
-            <span class="platform__note">Installable PWA app</span>
-          </a>
-        </li>
-        <li>
-          <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
-            <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
-            <span class="platform__name">iOS</span>
             <span class="platform__note">Installable PWA app</span>
           </a>
         </li>
@@ -166,20 +167,6 @@
             <!-- REPLACE images/shot-feat-spend.svg with a portrait screenshot of the spend-gate view -->
             <div class="phone-frame">
               <img src="images/shot-feat-spend.svg" alt="Spend-gated credits view in PerkMax" />
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-row">
-          <div class="feature-row__text">
-            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/ticket.svg')"></span></span>
-            <h3>Certificates &amp; free nights</h3>
-            <p>Track Hilton and Marriott free nights and Delta companion certificates — see what's unused and how much it's worth, with valuations you can tune.</p>
-          </div>
-          <div class="feature-row__art">
-            <!-- REPLACE images/shot-feat-certs.svg with a portrait screenshot of the certificates view -->
-            <div class="phone-frame">
-              <img src="images/shot-feat-certs.svg" alt="Certificates and free nights view in PerkMax" />
             </div>
           </div>
         </div>
@@ -230,8 +217,81 @@
     </div>
   </section>
 
+  <!-- ============ CARDS ============ -->
+  <section class="section" id="cards">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Ready out of the box</p>
+      <h2 class="section__title">Your card is probably already here.</h2>
+      <p class="section__lead">
+        21 premium cards across 6 issuers, with credits, thresholds, and
+        valuations pre-configured. Just add your card and start tracking.
+      </p>
+
+      <div class="issuers">
+
+        <div class="issuer">
+          <h3 class="issuer__name">American Express</h3>
+          <ul class="issuer__cards">
+            <li>American Express Gold</li>
+            <li>American Express Platinum</li>
+            <li>American Express Business Gold</li>
+            <li>American Express Business Platinum</li>
+            <li>Hilton Honors Aspire</li>
+            <li>Marriott Bonvoy Brilliant</li>
+            <li>Delta SkyMiles Reserve</li>
+          </ul>
+        </div>
+
+        <div class="issuer">
+          <h3 class="issuer__name">Chase</h3>
+          <ul class="issuer__cards">
+            <li>Sapphire Preferred</li>
+            <li>Sapphire Reserve</li>
+            <li>United Explorer</li>
+            <li>United Quest</li>
+            <li>United Club Card</li>
+          </ul>
+        </div>
+
+        <div class="issuer">
+          <h3 class="issuer__name">Capital One</h3>
+          <ul class="issuer__cards">
+            <li>Venture X Rewards</li>
+            <li>Venture X Business</li>
+          </ul>
+        </div>
+
+        <div class="issuer">
+          <h3 class="issuer__name">Bank of America</h3>
+          <ul class="issuer__cards">
+            <li>Premium Rewards Elite</li>
+            <li>Atmos Rewards Ascent</li>
+            <li>Atmos Rewards Summit</li>
+          </ul>
+        </div>
+
+        <div class="issuer">
+          <h3 class="issuer__name">Citi</h3>
+          <ul class="issuer__cards">
+            <li>Strata Premier</li>
+            <li>Strata Elite</li>
+          </ul>
+        </div>
+
+        <div class="issuer">
+          <h3 class="issuer__name">Bilt</h3>
+          <ul class="issuer__cards">
+            <li>Bilt Obsidian</li>
+            <li>Bilt Palladium</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============ RESPONSIVE ============ -->
-  <section class="section" id="responsive">
+  <section class="section section--alt" id="responsive">
     <div class="container">
       <p class="eyebrow eyebrow--center">Portrait or landscape</p>
       <h2 class="section__title">Looks right held tall or wide.</h2>
@@ -268,7 +328,7 @@
       <p class="eyebrow eyebrow--center eyebrow--light">Private by design</p>
       <h2 class="section__title section__title--light">Your wallet is yours.</h2>
       <p class="section__lead section__lead--light">
-        PerkMax stores everything on your device and answers to no server we run.
+        PerkMax stores everything on your device and answers to no servers.
         There is no PerkMax account, because there is no PerkMax backend to hold
         your data.
       </p>
@@ -313,7 +373,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.png" width="48" height="48" alt="" />
+        <img src="images/logo.png" width="60" height="60" alt="" />
         <span>PerkMax</span>
       </div>
       <p class="footer__disclaimer">
