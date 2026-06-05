@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" role="img" aria-label="Certificates screenshot placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7f1f0"/>
+      <stop offset="1" stop-color="#cfe3e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="url(#g)"/>
+  <g fill="none" stroke="#246B68" stroke-opacity=".5" stroke-width="2.5" stroke-dasharray="10 8">
+    <rect x="18" y="18" width="354" height="808" rx="22"/>
+  </g>
+  <text x="195" y="410" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#184c4a">Certificates &amp; Free Nights</text>
+  <text x="195" y="446" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#3d6f6c">Portrait · ~390 × 844</text>
+  <text x="195" y="480" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#3d6f6c">replace → images/shot-feat-certs.svg</text>
+</svg>

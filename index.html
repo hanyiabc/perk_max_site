@@ -29,8 +29,8 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#platforms">Platforms</a>
-        <a href="#responsive">Any screen</a>
         <a href="#features">Features</a>
+        <a href="#responsive">Any screen</a>
         <a href="#privacy">Privacy</a>
       </nav>
 
@@ -83,7 +83,8 @@
         Built with Flutter, PerkMax ships as a true native app on desktop,
         installs as a Progressive Web App from your browser, and sideloads on
         Android — all sharing the same wallet through your own cloud backup.
-        <strong>Tap your platform to get started.</strong>
+      </p>
+      <p class="section__lead" style="margin-bottom: 2.5rem;"><strong>Tap your platform to get started.</strong>
       </p>
 
       <ul class="platforms">
@@ -133,8 +134,104 @@
     </div>
   </section>
 
+  <!-- ============ FEATURES ============ -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">What it tracks</p>
+      <h2 class="section__title">Built for the way perks actually work.</h2>
+
+      <div class="feature-showcase">
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/credit-card.svg')"></span></span>
+            <h3>Recurring credits</h3>
+            <p>Monthly, quarterly, semi-annual, and annual credits with progress bars and one-tap "used" marking.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-credits.svg with a portrait screenshot of the credits view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-credits.svg" alt="Recurring credits view in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/target.svg')"></span></span>
+            <h3>Spend-gated credits</h3>
+            <p>See your progress toward spend thresholds that unlock benefits — like companion certificates at $30k or $60k.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-spend.svg with a portrait screenshot of the spend-gate view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-spend.svg" alt="Spend-gated credits view in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/ticket.svg')"></span></span>
+            <h3>Certificates &amp; free nights</h3>
+            <p>Track Hilton and Marriott free nights and Delta companion certificates — see what's unused and how much it's worth, with valuations you can tune.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-certs.svg with a portrait screenshot of the certificates view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-certs.svg" alt="Certificates and free nights view in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/repeat.svg')"></span></span>
+            <h3>Track Subscriptions</h3>
+            <p>Map Netflix, Instacart, and more to the card that reimburses them, and keep an eye on billing dates.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-subs.svg with a portrait screenshot of the subscriptions view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-subs.svg" alt="Subscriptions view in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/history.svg')"></span></span>
+            <h3>Usage history</h3>
+            <p>Review what you used and what you missed by card and period — and exactly how much value slipped away.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-history.svg with a portrait screenshot of the history view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-history.svg" alt="Usage history view in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/cloud-upload.svg')"></span></span>
+            <h3>Your-cloud backup</h3>
+            <p>Link to your own Google Drive to back up and sync your wallet. You hold the data — we never see it.</p>
+          </div>
+          <div class="feature-row__art">
+            <!-- REPLACE images/shot-feat-backup.svg with a portrait screenshot of the backup/settings view -->
+            <div class="phone-frame">
+              <img src="images/shot-feat-backup.svg" alt="Cloud backup settings in PerkMax" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============ RESPONSIVE ============ -->
-  <section class="section section--alt" id="responsive">
+  <section class="section" id="responsive">
     <div class="container">
       <p class="eyebrow eyebrow--center">Portrait or landscape</p>
       <h2 class="section__title">Looks right held tall or wide.</h2>
@@ -162,47 +259,6 @@
           <figcaption>Landscape · desktop &amp; tablet</figcaption>
         </figure>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ FEATURES ============ -->
-  <section class="section" id="features">
-    <div class="container">
-      <p class="eyebrow eyebrow--center">What it tracks</p>
-      <h2 class="section__title">Built for the way perks actually work.</h2>
-
-      <ul class="features">
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/credit-card.svg')"></span></span>
-          <h3>Recurring credits</h3>
-          <p>Monthly, quarterly, semi-annual, and annual credits with progress bars and one-tap "used" marking.</p>
-        </li>
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/target.svg')"></span></span>
-          <h3>Spend-gated credits</h3>
-          <p>See your progress toward spend thresholds that unlock benefits — like companion certificates at $30k or $60k.</p>
-        </li>
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/ticket.svg')"></span></span>
-          <h3>Certificates &amp; free nights</h3>
-          <p>All-or-nothing tracking for Hilton and Marriott free nights and Delta companion certs — with valuations you can tune.</p>
-        </li>
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/repeat.svg')"></span></span>
-          <h3>Subscriptions</h3>
-          <p>Map Netflix, Instacart, and more to the card that reimburses them, and keep an eye on billing dates.</p>
-        </li>
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/history.svg')"></span></span>
-          <h3>Usage history</h3>
-          <p>Review what you used and what you missed by card and period — and exactly how much value slipped away.</p>
-        </li>
-        <li class="feature">
-          <span class="feature__icon" aria-hidden="true"><span class="f-ico" style="--i:url('images/icons/cloud-upload.svg')"></span></span>
-          <h3>Your-cloud backup</h3>
-          <p>Optional, conflict-safe sync to <em>your own</em> Google Drive or OneDrive. You hold the data — we never see it.</p>
-        </li>
-      </ul>
     </div>
   </section>
 
