@@ -89,6 +89,15 @@ a { color: var(--teal); text-decoration: none; }
   border-color: var(--border);
 }
 .btn--ghost:hover { border-color: var(--teal-300); color: var(--teal); }
+.btn--icon { gap: .45rem; }
+.gh-ico {
+  display: inline-block;
+  width: 16px; height: 16px;
+  background-color: currentColor;
+  -webkit-mask: url('images/icons/github.svg') center / contain no-repeat;
+          mask: url('images/icons/github.svg') center / contain no-repeat;
+  flex-shrink: 0;
+}
 
 /* ---------- Nav ---------- */
 .nav {
@@ -146,7 +155,7 @@ a { color: var(--teal); text-decoration: none; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: .12em;
-  font-size: .78rem;
+  font-size: .9rem;
   font-weight: 700;
   color: var(--teal);
   margin: 0 0 1rem;
