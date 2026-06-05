@@ -1,6 +1,6 @@
 # PerkMax — landing page
 
-Marketing/landing site for **[PerkMax](https://github.com/hanyiabc/perk_max)**, a
+Marketing/landing site for **[PerkMax](https://hanyiabc.github.io/perk_max_site/)**, a
 Flutter app that tracks recurring credits and perks on premium credit cards.
 
 It is a single static page — `index.html`, `styles.css`, `script.js`, and an
