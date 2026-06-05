@@ -23,7 +23,7 @@
   <header class="nav" id="top">
     <div class="container nav__inner">
       <a class="brand" href="#top" aria-label="PerkMax home">
-        <img class="brand__logo" src="images/logo.png" width="44" height="44" alt="" />
+        <img class="brand__logo" src="images/logo.png" width="53" height="53" alt="" />
         <span class="brand__name">PerkMax</span>
       </a>
 
@@ -35,8 +35,7 @@
       </nav>
 
       <div class="nav__cta">
-        <a class="btn btn--ghost" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Download</a>
-        <a class="btn btn--primary" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
+        <a class="btn btn--primary" id="nav-get-btn" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Get the app</a>
       </div>
 
       <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -57,8 +56,8 @@
           you're already paying annual fees for.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--primary btn--lg" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
-          <a class="btn btn--ghost btn--lg" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Download for your device</a>
+          <a class="btn btn--primary btn--lg" id="hero-get-btn" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Get the app</a>
+          <a class="btn btn--ghost btn--lg" href="#platforms">All platforms</a>
         </div>
         <ul class="hero__chips" aria-label="Supported platforms">
           <li>Android</li>
@@ -70,12 +69,9 @@
       </div>
 
       <div class="hero__art">
-        <!-- REPLACE images/shot-hero.svg with a real dashboard screenshot (landscape, ~1200×760) -->
-        <div class="browser-frame">
-          <div class="browser-frame__bar">
-            <span></span><span></span><span></span>
-          </div>
-          <img src="images/shot-hero.svg" alt="PerkMax dashboard showing credit progress across cards" />
+        <!-- REPLACE images/shot-hero.svg with a real phone screenshot (portrait, ~390×844) -->
+        <div class="phone-frame hero__phone">
+          <img src="images/shot-hero.svg" alt="PerkMax showing credit progress on a phone" />
         </div>
       </div>
     </div>
@@ -93,35 +89,47 @@
       </p>
 
       <ul class="platforms">
-        <li class="platform">
-          <span class="p-ico" style="--i:url('images/icons/android.svg')" aria-hidden="true"></span>
-          <span class="platform__name">Android</span>
-          <span class="platform__note">Sideloaded APK</span>
+        <li>
+          <a class="platform" href="https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/app-release.apk" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/android.svg')" aria-hidden="true"></span>
+            <span class="platform__name">Android</span>
+            <span class="platform__note">Download APK</span>
+          </a>
         </li>
-        <li class="platform">
-          <span class="p-ico" style="--i:url('images/icons/pwa.svg')" aria-hidden="true"></span>
-          <span class="platform__name">Web</span>
-          <span class="platform__note">Installable PWA</span>
+        <li>
+          <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/pwa.svg')" aria-hidden="true"></span>
+            <span class="platform__name">Web</span>
+            <span class="platform__note">Open PWA</span>
+          </a>
         </li>
-        <li class="platform">
-          <span class="p-ico" style="--i:url('images/icons/windows.svg')" aria-hidden="true"></span>
-          <span class="platform__name">Windows</span>
-          <span class="platform__note">Native build</span>
+        <li>
+          <a class="platform" href="https://github.com/hanyiabc/perk_max_releases/releases/download/v0.1.0/perk_max_windows.zip" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/windows.svg')" aria-hidden="true"></span>
+            <span class="platform__name">Windows</span>
+            <span class="platform__note">Download ZIP</span>
+          </a>
         </li>
-        <li class="platform">
-          <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
-          <span class="platform__name">macOS</span>
-          <span class="platform__note">Native build</span>
+        <li>
+          <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
+            <span class="platform__name">macOS</span>
+            <span class="platform__note">Use web app</span>
+          </a>
         </li>
-        <li class="platform">
-          <span class="p-ico" style="--i:url('images/icons/linux.svg')" aria-hidden="true"></span>
-          <span class="platform__name">Linux</span>
-          <span class="platform__note">Native build</span>
+        <li>
+          <a class="platform" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/linux.svg')" aria-hidden="true"></span>
+            <span class="platform__name">Linux</span>
+            <span class="platform__note">Use web app</span>
+          </a>
         </li>
-        <li class="platform platform--soon">
-          <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
-          <span class="platform__name">iOS</span>
-          <span class="platform__note">Planned</span>
+        <li>
+          <a class="platform platform--soon" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">
+            <span class="p-ico" style="--i:url('images/icons/apple.svg')" aria-hidden="true"></span>
+            <span class="platform__name">iOS</span>
+            <span class="platform__note">Planned · use web app</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -236,11 +244,11 @@
   <section class="section download" id="download">
     <div class="container download__inner">
       <h2 class="section__title">Get PerkMax.</h2>
-      <p class="section__lead">Pick the build for your device, or just open it in the browser — no install required.</p>
+      <p class="section__lead">Free, no account needed. Opens instantly in the browser or installs on your device.</p>
       <div class="download__actions">
-        <a class="btn btn--primary btn--lg" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Launch web app</a>
-        <a class="btn btn--ghost btn--lg" href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">Android &amp; desktop downloads</a>
+        <a class="btn btn--primary btn--lg" id="dl-get-btn" href="https://hanyiabc.github.io/perk_max_releases/" target="_blank" rel="noopener">Get the app</a>
       </div>
+      <p class="download__alt"><a href="https://github.com/hanyiabc/perk_max_releases/releases" target="_blank" rel="noopener">View all releases on GitHub</a></p>
     </div>
   </section>
 
@@ -248,7 +256,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.png" width="40" height="40" alt="" />
+        <img src="images/logo.png" width="48" height="48" alt="" />
         <span>PerkMax</span>
       </div>
       <p class="footer__disclaimer">

@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Screenshot placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" role="img" aria-label="Hero screenshot placeholder">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#e7f1f0"/>
       <stop offset="1" stop-color="#cfe3e1"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="760" fill="url(#g)"/>
-  <g fill="none" stroke="#246B68" stroke-opacity=".5" stroke-width="3" stroke-dasharray="12 10">
-    <rect x="40" y="40" width="1120" height="680" rx="16"/>
+  <rect width="390" height="844" fill="url(#g)"/>
+  <g fill="none" stroke="#246B68" stroke-opacity=".5" stroke-width="2.5" stroke-dasharray="10 8">
+    <rect x="18" y="18" width="354" height="808" rx="22"/>
   </g>
-  <g fill="#246B68" transform="translate(600 300)">
-    <g transform="translate(-44 -44)">
-      <rect x="0" y="8" width="88" height="72" rx="8" fill="#246B68" fill-opacity=".15"/>
-      <rect x="0" y="8" width="88" height="72" rx="8" fill="none" stroke="#246B68" stroke-width="4"/>
-      <circle cx="26" cy="34" r="10"/>
-      <path d="M10 70 L36 44 L54 62 L70 48 L88 66 L88 80 L10 80 Z"/>
+  <g transform="translate(195 360)">
+    <g transform="translate(-40 -40)" fill="#246B68">
+      <rect x="0" y="6" width="80" height="66" rx="8" fill="#246B68" fill-opacity=".15"/>
+      <rect x="0" y="6" width="80" height="66" rx="8" fill="none" stroke="#246B68" stroke-width="4"/>
+      <circle cx="24" cy="30" r="9"/>
+      <path d="M8 64 L32 40 L50 58 L64 46 L80 60 L80 72 L8 72 Z"/>
     </g>
   </g>
-  <text x="600" y="420" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#184c4a">Dashboard screenshot</text>
-  <text x="600" y="462" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#3d6f6c">Landscape · recommended 1200 × 760</text>
-  <text x="600" y="500" text-anchor="middle" font-family="Consolas, monospace" font-size="18" fill="#3d6f6c">replace → images/shot-hero.svg</text>
+  <text x="195" y="468" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#184c4a">Hero screenshot</text>
+  <text x="195" y="504" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#3d6f6c">Portrait · ~390 × 844</text>
+  <text x="195" y="538" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#3d6f6c">replace → images/shot-hero.svg</text>
 </svg>

@@ -103,10 +103,10 @@ a { color: var(--teal); text-decoration: none; }
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  height: 64px;
+  height: 70px;
 }
 .brand { display: flex; align-items: center; gap: .55rem; color: var(--text); font-weight: 700; }
-.brand__logo { width: 44px; height: 44px; border-radius: 10px; }
+.brand__logo { width: 53px; height: 53px; border-radius: 12px; }
 .brand__name { font-size: 1.2rem; letter-spacing: -.01em; }
 .nav__links { display: flex; gap: 1.5rem; margin-left: auto; }
 .nav__links a { color: var(--muted); font-weight: 500; font-size: .95rem; }
@@ -135,9 +135,13 @@ a { color: var(--teal); text-decoration: none; }
 }
 .hero__grid {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
+}
+.hero__phone {
+  max-width: 300px;
+  margin-inline: auto;
 }
 .eyebrow {
   text-transform: uppercase;
@@ -238,6 +242,7 @@ a { color: var(--teal); text-decoration: none; }
   padding: 0;
   margin: 0;
 }
+.platforms li { display: contents; }
 .platform {
   display: flex;
   flex-direction: column;
@@ -249,6 +254,18 @@ a { color: var(--teal); text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease, border-color .15s ease;
+}
+.platform:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--teal-300);
+}
+.platform:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
 }
 /* Icons are self-hosted SVGs (Simple Icons / Lucide) tinted via CSS mask,
    so they inherit the theme color and work in light & dark. See images/icons/. */
@@ -351,6 +368,7 @@ a { color: var(--teal); text-decoration: none; }
   flex-wrap: wrap;
   gap: .8rem;
 }
+.download__alt { margin: 1rem 0 0; font-size: .9rem; color: var(--muted); }
 
 /* ---------- Footer ---------- */
 .footer {
@@ -366,7 +384,7 @@ a { color: var(--teal); text-decoration: none; }
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.footer__brand img { width: 40px; height: 40px; border-radius: 9px; }
+.footer__brand img { width: 48px; height: 48px; border-radius: 11px; }
 .footer__brand { font-size: 1.15rem; }
 .footer__disclaimer {
   max-width: 70ch;
@@ -391,7 +409,7 @@ a { color: var(--teal); text-decoration: none; }
   .nav[data-open="true"] .nav__links {
     display: flex;
     position: absolute;
-    top: 64px; left: 0; right: 0;
+    top: 70px; left: 0; right: 0;
     flex-direction: column;
     gap: 0;
     background: var(--bg);
@@ -402,7 +420,7 @@ a { color: var(--teal); text-decoration: none; }
 
   .hero__grid { grid-template-columns: 1fr; }
   .hero__sub { max-width: none; }
-  .hero__art { order: -1; max-width: 520px; }
+  .hero__art { order: -1; max-width: 300px; }
 
   .responsive__grid { grid-template-columns: 1fr; }
   .device--phone { order: 2; }
