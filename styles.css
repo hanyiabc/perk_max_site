@@ -115,7 +115,7 @@ a { color: var(--teal); text-decoration: none; }
   height: 80px;
 }
 .brand { display: flex; align-items: center; gap: .55rem; color: var(--text); font-weight: 700; }
-.brand__logo { width: 66px; height: 66px; border-radius: 15px; }
+.brand__logo { width: 66px; height: 66px; }
 .brand__name { font-size: 1.2rem; letter-spacing: -.01em; }
 .nav__links { display: flex; gap: 1.5rem; margin-left: auto; }
 .nav__links a { color: var(--muted); font-weight: 500; font-size: .95rem; }
