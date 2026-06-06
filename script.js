@@ -8,6 +8,42 @@
     pwa:     'https://hanyiabc.github.io/perk_max_releases/',
   };
 
+  function fetchLatestRelease() {
+    fetch('https://api.github.com/repos/hanyiabc/perk_max_releases/releases/latest')
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var assets  = Array.isArray(data.assets) ? data.assets : [];
+        var version = typeof data.tag_name === 'string'
+          ? data.tag_name.replace(/^v/, '') : null;
+
+        var apk = assets.find(function (a) {
+          return /\.apk$/.test(a.name);
+        });
+        var zip = assets.find(function (a) {
+          return /\.zip$/.test(a.name);
+        });
+
+        if (apk) {
+          URLS.android = apk.browser_download_url;
+          var el = document.getElementById('platform-android');
+          if (el) el.href = apk.browser_download_url;
+          var note = document.getElementById('platform-android-note');
+          if (note && version) note.textContent = 'Download APK v' + version;
+        }
+        if (zip) {
+          URLS.windows = zip.browser_download_url;
+          var el = document.getElementById('platform-windows');
+          if (el) el.href = zip.browser_download_url;
+          var note = document.getElementById('platform-windows-note');
+          if (note && version) note.textContent = 'Download ZIP v' + version;
+        }
+
+        // Re-run so the hero / nav / download-section smart buttons pick up the new URLs.
+        initSmartButtons();
+      })
+      .catch(function () { /* silently keep hardcoded fallback URLs */ });
+  }
+
   function detectPlatform() {
     var ua = navigator.userAgent;
     if (/android/i.test(ua)) return 'android';
@@ -62,4 +98,5 @@
   if (year) year.textContent = String(new Date().getFullYear());
 
   initSmartButtons();
+  fetchLatestRelease();
 })();
